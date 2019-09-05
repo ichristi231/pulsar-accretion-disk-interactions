@@ -3,6 +3,10 @@ from scipy.special import kv
 import scipy.integrate as integrate
 from scipy.interpolate import interp1d
 from matplotlib import pyplot as plt
+# from .tables import sgr_a_observations
+from pathlib import Path
+
+print(Path.cwd())
 
 
 #################### Definition of Physical Constants ####################
