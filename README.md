@@ -5,4 +5,6 @@ At the center of our Galaxy lies a sumpermassive black hole (BH), roughly a mill
 
 The emission detected from the accretion disk is produced from a variety of mechanisms, with low-frequencies produced from synchrotron emission while the X-rays are produced from thermal Bremsstrhalung []. Despite the large observational campaigns however, properties of the disk (e.g. number density, temperature, and speed of the gas) remain elusive. To combat this problem, we may use indirect methods of probing the accretion. One example is to study the interactions, and subsequent emission, of the disk with stars orbiting the BH []. 
 
-One type of star, 
+One type of star,
+
+# Citations
