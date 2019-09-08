@@ -3,10 +3,7 @@ from scipy.special import kv
 import scipy.integrate as integrate
 from scipy.interpolate import interp1d
 from matplotlib import pyplot as plt
-# from .tables import sgr_a_observations
-from pathlib import Path
-
-print(Path.cwd())
+from tables import sgr_a_observations
 
 
 #################### Definition of Physical Constants ####################
@@ -105,22 +102,22 @@ f = 0 * gamma_table
 # that they are listed in the same order as eqn. 8.
 for i in range(np.shape(timestable)[0]):
     f = (gamma_table > gamma_min) * (gamma_table < gamma_cool_1[i]) * (1 - (1 - b * gamma_table * timestable[i])**(particle_slope - 1))
-    f[isnan(f)] = 0
+    f[np.isnan(f)] = 0
     particle_distribution[i] += f
 
     f = 0 * gamma_table
     f = (gamma_cool_1[i] < gamma_table) * (gamma_table < gamma_max) * (1 - (gamma_max / gamma_table)**(1 - particle_slope))
-    f[isnan(f)] = 0
+    f[np.isnan(f)] = 0
     particle_distribution[i] += f
 
     f = 0 * gamma_table
     f = (gamma_cool_1[i] < gamma_table) * (gamma_table < gamma_min) * ((1 - (gamma_max / gamma_min)**(1 - particle_slope)) * (gamma_min / gamma_table)**(1 - particle_slope))
-    f[isnan(f)] = 0
+    f[np.isnan(f)] = 0
     particle_distribution[i] += f
 
     f = 0 * gamma_table
     f = (gamma_cool_2[i] < gamma_table) * (gamma_table < gamma_min) * ((gamma_min / gamma_table)**(1 - particle_slope) - (1 - b * timestable[i] * gamma_table)**(particle_slope - 1))
-    f[isnan(f)] = 0
+    f[np.isnan(f)] = 0
     particle_distribution[i] += f
 
     particle_distribution[i] *= (particle_distribution_norm * gamma_table**(-1 - particle_slope) / (b * (particle_slope - 1)))

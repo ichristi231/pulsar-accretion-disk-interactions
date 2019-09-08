@@ -1,11 +1,15 @@
 [tool.poetry]
-name = "pathlib"
+name = "pulsar_disk"
 version = "0.1.0"
 description = ""
 authors = ["Ian Christie <ichristi231@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+pathlib = "^1.0"
+numpy = "^1.17"
+matplotlib = "^3.1"
+scipy = "^1.3"
 
 [tool.poetry.dev-dependencies]
 
