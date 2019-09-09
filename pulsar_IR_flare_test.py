@@ -3,7 +3,8 @@ from scipy.special import kv
 import scipy.integrate as integrate
 from scipy.interpolate import interp1d
 from matplotlib import pyplot as plt
-from tables import sgr_a_observations
+from tables import (sgr_a_observations_frequency,
+    sgr_a_observations_luminosity)
 
 
 #################### Definition of Physical Constants ####################
@@ -184,7 +185,9 @@ for i in range(np.shape(timestable)[0]):
     axs[1].loglog(photon_frequency, synchrotron_pow[i])
     axs[1].set_xlim([10**7., 10**26.])
     axs[1].set_ylim([10**21., 10**36.])
-axs[1].loglog(1.4*(10**14.), 6*1.15*(10**34.), 'bx')
+#axs[1].loglog(1.4*(10**14.), 6*1.15*(10**34.), 'bx')
+axs[1].loglog(10**sgr_a_observations_frequency,
+    10**sgr_a_observations_luminosity, 'x', color = 'black')
 axs[1].set_xlabel(r'$\nu$ (Hz)')
 axs[1].set_ylabel(r'$\nu \, L_\nu$ (erg/s)')
 
