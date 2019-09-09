@@ -1,13 +1,27 @@
 # pulsar-accretion-disk-interactions
 
-## Overview
-
 ## Introduction
+
 At the center of our Galaxy lies a sumpermassive black hole (BH), roughly a million times more massive than our Sun, denoted as Sgr A* [3, 7]. Observations of Sgr A*, from radio frequencies up to X-rays, are made possible through the detection of photons (i.e. light) emitted by large bodies of gas surrounding the BH. This gas is thought to form an accretion disk, i.e. donut, surrounding, and eventually feeding, the BH. 
 
 The emission detected from the accretion disk is produced from a variety of mechanisms, with low-frequencies produced from synchrotron emission while the X-rays are produced from thermal Bremsstrhalung [1]. Despite the large observational campaigns however, properties of the disk (e.g. number density, temperature, and speed of the gas) remain elusive. To combat this problem, we may use indirect methods of probing the accretion. One example is to study the interactions, and subsequent emission, of the disk with stars orbiting the BH [5, 6, 8]. 
 
 One type of star we consider here is a neutron star (NS) (for a more detailed description, see [5]). A large population of these stars have been proposed to reside in our Galactic center, which could potentially explain the NASA Fermi-LAT observed GeV excess [2], but are obscured by large amounts of dust [4, 9]. If NS were to intercept the accretion disk gas, they could inject highly relativistic particle within the disk. The particles would be left to cool and radiate, via synchrotron emission, within the local magnetic fields of the disk. Detection of this emission would allow one to constrain properties of both the accretion disk and the NS!
+
+## Overview
+
+You'll need to use [`poetry`](https://github.com/sdispater/poetry) to install the dependencies:
+```bash
+$ poetry install
+
+$ poetry init
+<answer the prompts, not adding dependencies interactively>
+
+$ poetry add package1 package2 ... packageN
+
+$ poetry run python3 _____.py
+```
+
 
 ## Citations
 
