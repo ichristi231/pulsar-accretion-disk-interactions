@@ -3,8 +3,10 @@ from scipy.special import kv
 import scipy.integrate as integrate
 from scipy.interpolate import interp1d
 from matplotlib import pyplot as plt
-from tables import (sgr_a_observations_frequency,
-    sgr_a_observations_luminosity)
+import matplotlib.patches as patches
+from tables import (sgr_a_observations_radio_frequency,
+    sgr_a_observations_radio_luminosity, sgr_a_observations_xray_frequency,
+    sgr_a_observations_xray_luminosity)
 
 
 #################### Definition of Physical Constants ####################
@@ -230,10 +232,20 @@ axs[0].set_ylabel(r'N$^e$($\gamma , t$)')
 for i in range(np.shape(timestable)[0]):
     axs[1].loglog(photon_frequency, synchrotron_pow[i])
     axs[1].set_xlim([10**7., 10**26.])
-    axs[1].set_ylim([10**21., 10**36.])
+    axs[1].set_ylim([10**26., 10**37.])
 # axs[1].loglog(1.4*(10**14.), 6*1.15*(10**34.), 'bx')
-axs[1].loglog(10**sgr_a_observations_frequency,
-    10**sgr_a_observations_luminosity, 'x', color = 'black')
+axs[1].loglog(10**sgr_a_observations_radio_frequency,
+    10**sgr_a_observations_radio_luminosity, 'x', color='black')
+# Create a Rectangle patch
+xray_nu_1 = 10**sgr_a_observations_xray_frequency[0]
+xray_nu_2 = 10**sgr_a_observations_xray_frequency[1]
+xray_lumionsity_1 = 10**sgr_a_observations_xray_luminosity[0]
+xray_lumionsity_2 = 10**sgr_a_observations_xray_luminosity[1]
+rect = patches.Rectangle((xray_nu_1, xray_lumionsity_1), xray_nu_2 - xray_nu_1,
+    xray_lumionsity_2 - xray_lumionsity_1, linewidth=1, edgecolor='magenta',
+    facecolor='magenta', alpha=0.5)
+# Add the patch to the Axes
+axs[1].add_patch(rect)
 axs[1].set_xlabel(r'$\nu$ (Hz)')
 axs[1].set_ylabel(r'$\nu \, L_\nu$ (erg/s)')
 
