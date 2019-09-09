@@ -1,10 +1,15 @@
-# pulsar-accretion-disk-interactions
+# Tables
 
-## Problem Overview
-At the center of our Galaxy lies a sumpermassive black hole (BH), roughly a million times more massive than our Sun, denoted as Sgr A* []. Observations of Sgr A*, from radio frequencies up to X-rays, are made possible through the detection of photons (i.e. light) emitted by large bodies of gas surrounding the BH []. This gas is thought to form an accretion disk, i.e. donut, surrounding, and eventually feeding, the BH. 
+This directory contains tables need to compare the non-thermal emission with that os Sgr A* observations. Currently, this directory contains the log10 values of:
 
-The emission detected from the accretion disk is produced from a variety of mechanisms, with low-frequencies produced from synchrotron emission while the X-rays are produced from thermal Bremsstrhalung []. Despite the large observational campaigns however, properties of the disk (e.g. number density, temperature, and speed of the gas) remain elusive. To combat this problem, we may use indirect methods of probing the accretion. One example is to study the interactions, and subsequent emission, of the disk with stars orbiting the BH []. 
+i) the photon frequency (in Hz) of observations 
 
-One type of star,
+ii) the respective luminosity (in erg/s) of Sgr A*
 
-# Citations
+The frequency ranges of Sgr A*'s observations and their respective references are listed below:
+
+i) radio frequencies (`1.36 - 235.6 GHz`) we adopted from 
+Falcke H., Goss W. M., Matsuo H., Teuben P., Zhao J.-H., Zylka R., 1998, Astrophysical Journal, 499, 731
+(https://ui.adsabs.harvard.edu/abs/1998ApJ...499..731F/abstract)
+
+ii)
