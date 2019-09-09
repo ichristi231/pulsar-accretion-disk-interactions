@@ -1,6 +1,6 @@
 # Tables
 
-This directory contains tables need to compare the non-thermal emission with that os Sgr A* observations. Currently, this directory contains the log10 values of:
+This directory contains tables needed to compare the non-thermal emission from pulsar-disk interactions with that of Sgr A* observations. Currently, this directory contains the log10 values of:
 
 i) the photon frequency (in Hz) of observations 
 
