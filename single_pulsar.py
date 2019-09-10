@@ -1,3 +1,22 @@
+# This code was developed by I. Christie. If using, make references
+# to the following works:
+# i) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2017, MNRAS, 468,
+# L26   (https://ui.adsabs.harvard.edu/abs/2017MNRAS.468L..26C/abstract)
+# ii) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2016, MNRAS, 459,
+# 2420  (https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.2420C/abstract)
+
+# This scripts considers the interactions of a single pulsar
+# with the accretion disk of Sgr A*. Using several of the few
+# free parameters (listed below), the script follows the pulsar
+# when it first intercepts the disk, computing the accelerated
+# particle distribution at the shock interface. We follow the
+# particle distibution as it cools within the local magnetic
+# fields of the disk all the way to the accretion timescale all
+# while computing the synchrotron spectrum. The final result is
+# a plot which displays the temporal evolution of the synchrotron
+# spectrum and particle distribution, the former being compared with
+# the spectral energy distribution of Sgr A*.
+
 import numpy as np
 from scipy.special import kv
 import scipy.integrate as integrate
