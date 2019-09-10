@@ -6,7 +6,7 @@ i) the photon frequency (in Hz) of observations
 
 ii) the respective luminosity (in erg/s) of Sgr A*
 
-iii) spin-down luminosities (in erg/s) of pulsars taken from the ATNF survery [1]
+iii) spin-down luminosities (in erg/s) of pulsars taken from the ATNF survery [[1][1]]
 
 ## Observations
 
@@ -34,4 +34,6 @@ Melia, F. & Falcke, H. 2001, ARA&A, 39, 309
 
 ## Citations
 
-[1] Manchester R. N., Hobbs G. B., Teoh A., Hobbs M., 2005, Astronomical Journal, 129, 1993 (https://ui.adsabs.harvard.edu/abs/2005AJ....129.1993M/abstract)
+(1) Manchester R. N., Hobbs G. B., Teoh A., Hobbs M., 2005, Astronomical Journal, 129, 1993 (https://ui.adsabs.harvard.edu/abs/2005AJ....129.1993M/abstract)
+
+[1]: https://ui.adsabs.harvard.edu/abs/2005AJ....129.1993M/abstract
