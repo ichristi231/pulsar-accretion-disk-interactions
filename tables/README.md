@@ -19,3 +19,13 @@ ii) x-ray frequencies (`2 - 10 keV`) were adopted from:
 
 Baganoff F. K. et al., 2003, Astrophysical Journal, 591, 891
 (https://ui.adsabs.harvard.edu/abs/2003ApJ...591..891B/abstract)
+
+iii) NIR to IR frequencies (`1 - 30 micro-meters`) were adopted from:
+
+Genzel, R., Sch¨odel, R., Ott, T., Eckart, A., Alexander, T., Lacombe, F., Rouan, D., & Aschenbach, B. 2003, Nat, 425, 934
+(https://ui.adsabs.harvard.edu/abs/2003Natur.425..934G/abstract)
+
+and
+
+Melia, F. & Falcke, H. 2001, ARA&A, 39, 309
+(https://ui.adsabs.harvard.edu/abs/2001ARA%26A..39..309M/abstract)
