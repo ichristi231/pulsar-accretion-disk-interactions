@@ -25,7 +25,8 @@ from matplotlib import pyplot as plt
 import matplotlib.patches as patches
 from tables import (sgr_a_observations_radio_frequency,
     sgr_a_observations_radio_luminosity, sgr_a_observations_xray_frequency,
-    sgr_a_observations_xray_luminosity)
+    sgr_a_observations_xray_luminosity, sgr_a_observations_IR_frequency,
+    sgr_a_observations_IR_luminosity)
 
 
 #################### Definition of Physical Constants ####################
@@ -255,6 +256,8 @@ for i in range(np.shape(timestable)[0]):
 # axs[1].loglog(1.4*(10**14.), 6*1.15*(10**34.), 'bx')
 axs[1].loglog(10**sgr_a_observations_radio_frequency,
     10**sgr_a_observations_radio_luminosity, 'x', color='black')
+axs[1].loglog(10**sgr_a_observations_IR_frequency,
+    10**sgr_a_observations_IR_luminosity, 'x', color='lime')
 # Create a Rectangle patch
 xray_nu_1 = 10**sgr_a_observations_xray_frequency[0]
 xray_nu_2 = 10**sgr_a_observations_xray_frequency[1]
