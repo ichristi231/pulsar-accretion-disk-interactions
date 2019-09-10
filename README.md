@@ -4,7 +4,7 @@ This repository contains several scripts used investigating the non-thermal emis
 
 i) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2017, MNRAS, 468, L26 (https://ui.adsabs.harvard.edu/abs/2017MNRAS.468L..26C/abstract)
 
-2) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2016, MNRAS, 459, 2420 (https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.2420C/abstract)
+ii) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2016, MNRAS, 459, 2420 (https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.2420C/abstract)
 
 ## Introduction
 
