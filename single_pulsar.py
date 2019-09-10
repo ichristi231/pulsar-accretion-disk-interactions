@@ -1,7 +1,9 @@
-# This code was developed by I. Christie. If using, make references
-# to the following works:
+# This code was developed by I. Christie (in collaboration with Z. Mitchell).
+# If using, make references to the following works:
+
 # i) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2017, MNRAS, 468,
 # L26   (https://ui.adsabs.harvard.edu/abs/2017MNRAS.468L..26C/abstract)
+#
 # ii) Christie I. M., Petropoulou M., Mimica P., Giannios D., 2016, MNRAS, 459,
 # 2420  (https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.2420C/abstract)
 
