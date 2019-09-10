@@ -6,7 +6,9 @@ i) the photon frequency (in Hz) of observations
 
 ii) the respective luminosity (in erg/s) of Sgr A*
 
-## Observations & Citations
+iii) spin-down luminosities (in erg/s) of pulsars taken from the ATNF survery [1]
+
+## Observations
 
 The frequency ranges of Sgr A*'s observations and their respective references are listed below:
 
@@ -29,3 +31,7 @@ and
 
 Melia, F. & Falcke, H. 2001, ARA&A, 39, 309
 (https://ui.adsabs.harvard.edu/abs/2001ARA%26A..39..309M/abstract)
+
+## Citations
+
+[1] Manchester R. N., Hobbs G. B., Teoh A., Hobbs M., 2005, Astronomical Journal, 129, 1993 (https://ui.adsabs.harvard.edu/abs/2005AJ....129.1993M/abstract)
