@@ -18,14 +18,13 @@ One type of star we consider here is a neutron star (NS) (for a more detailed de
 
 You'll need to use [`poetry`](https://github.com/sdispater/poetry) to install the dependencies:
 ```bash
+$ git clone https://github.com/ichristi231/pulsar-accretion-disk-interactions.git
+
+$ cd pulsar-accretion-disk-interactions
+
 $ poetry install
 
-$ poetry init
-<answer the prompts, not adding dependencies interactively>
-
-$ poetry add package1 package2 ... packageN
-
-$ poetry run python3 _____.py
+$ poetry run python3 single_pulsar.py
 ```
 
 
