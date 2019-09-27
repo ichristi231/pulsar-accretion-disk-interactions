@@ -25,7 +25,8 @@ import scipy.integrate as integrate
 from scipy.interpolate import interp1d
 from matplotlib import pyplot as plt
 import matplotlib.patches as patches
-from tables import (sgr_a_observations_radio_frequency,
+from tables import (synchrotron_log10_f_x,
+    synchrotron_log10_x, sgr_a_observations_radio_frequency,
     sgr_a_observations_radio_luminosity, sgr_a_observations_xray_frequency,
     sgr_a_observations_xray_luminosity, sgr_a_observations_IR_frequency,
     sgr_a_observations_IR_luminosity)
@@ -197,12 +198,7 @@ for i in range(np.shape(timestable)[0]):
 # Below, we create an array of x values tand appropriate F(x) values (see eqn.
 # in Rybicki & Lightman). This allows for easier computation of the single
 # particle electron emissivity.
-x_store = np.logspace(-20, 2, 99)
-f_store = 0 * x_store
-for i in range(np.shape(x_store)[0]):
-    f_store[i] = x_store[i] * integrate.quad(lambda y: np.exp(y) * kv(5./3.,
-        np.exp(y)), np.log(x_store[i]), np.log(10**5.))[0]
-f_interp = interp1d(np.log10(x_store), np.log10(f_store))
+f_interp = interp1d(synchrotron_log10_x, synchrotron_log10_f_x)
 
 # Table of photon frequency values in Hertz.
 photon_frequency = np.logspace(7, 28, 99)
